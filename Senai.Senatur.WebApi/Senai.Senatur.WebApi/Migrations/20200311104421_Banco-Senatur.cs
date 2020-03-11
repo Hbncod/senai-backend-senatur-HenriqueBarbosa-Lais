@@ -66,8 +66,8 @@ namespace Senai.Senatur.WebApi.Migrations
                 {
                     Id_Usuario = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    VARCHAR150 = table.Column<string>(name: "VARCHAR(150)", maxLength: 150, nullable: false),
-                    VARCHAR30 = table.Column<string>(name: "VARCHAR(30)", maxLength: 30, nullable: false),
+                    Email = table.Column<string>(type: "VARCHAR(150)", maxLength: 150, nullable: false),
+                    Senha = table.Column<string>(type: "VARCHAR (30)", maxLength: 30, nullable: false),
                     Fk_TipoUsuario = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -111,7 +111,7 @@ namespace Senai.Senatur.WebApi.Migrations
 
             migrationBuilder.InsertData(
                 table: "Usuarios",
-                columns: new[] { "Id_Usuario", "VARCHAR(150)", "Fk_TipoUsuario", "VARCHAR(30)" },
+                columns: new[] { "Id_Usuario", "Email", "Fk_TipoUsuario", "Senha" },
                 values: new object[,]
                 {
                     { 1, "admin@admin.com", 1, "admin" },
@@ -136,9 +136,9 @@ namespace Senai.Senatur.WebApi.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Usuarios_VARCHAR(150)",
+                name: "IX_Usuarios_Email",
                 table: "Usuarios",
-                column: "VARCHAR(150)",
+                column: "Email",
                 unique: true);
 
             migrationBuilder.CreateIndex(

@@ -124,14 +124,14 @@ namespace Senai.Senatur.WebApi.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnName("VARCHAR(150)")
+                        .HasColumnType("VARCHAR(150)")
                         .HasMaxLength(150);
 
                     b.Property<int>("Fk_TipoUsuario");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnName("VARCHAR(30)")
+                        .HasColumnType("VARCHAR (30)")
                         .HasMaxLength(30);
 
                     b.HasKey("Id_Usuario");

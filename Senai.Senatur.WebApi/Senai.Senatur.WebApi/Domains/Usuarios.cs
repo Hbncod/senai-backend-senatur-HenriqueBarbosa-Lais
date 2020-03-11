@@ -18,7 +18,7 @@ namespace Senai.Senatur.WebApi.Domains
         public int Id_Usuario { get; set; }
 
         // Define o tipo da coluna
-        [Column("VARCHAR(150)")]
+        [Column(TypeName = "VARCHAR(150)")]
         // define o máximo de caracteres suportado e devolve uma mensagem de erro
         [StringLength(150, ErrorMessage = "O máximo de caracteres permitido é 150")]
         // Define o tipo do dado
@@ -28,7 +28,7 @@ namespace Senai.Senatur.WebApi.Domains
         public string Email { get; set; }
 
         // define o tipo da coluna
-        [Column("VARCHAR(30)")]
+        [Column(TypeName = "VARCHAR (30)")]
         // define o tipo do dado
         [DataType(DataType.Password)]
         //Define o mínimo e o máximo de caracteres que a senha recebe
