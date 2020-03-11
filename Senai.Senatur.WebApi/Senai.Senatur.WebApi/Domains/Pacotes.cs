@@ -57,8 +57,6 @@ namespace Senai.Senatur.WebApi.Domains
         [DataType(DataType.Currency)]
             public decimal Valor { get; set; }
 
-        // define que é obrigatório 
-        [Required(ErrorMessage ="A cidade é obrigatória")]
         // define o tipo da coluna no banco de dados
         [Column(TypeName = "BIT")]
             public bool Ativo { get; set; }
@@ -69,6 +67,9 @@ namespace Senai.Senatur.WebApi.Domains
         
         // define a chave estrangeira
         [ForeignKey("Fk_NomeCidade")]
+        
             public Cidades Cidade { get; set; }
+
+       
     }
 }

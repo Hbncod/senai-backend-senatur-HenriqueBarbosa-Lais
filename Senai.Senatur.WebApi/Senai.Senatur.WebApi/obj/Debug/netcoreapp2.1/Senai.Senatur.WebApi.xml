@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai.Senatur.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Senai.Senatur.WebApi.Context.SenaturContext">
+            <summary>
+            Classe responsável pelo contexto do projeto
+            faz a comunicação entre API e Banco de Dados
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Context.SenaturContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Define o modelo de criação do bnco
+            </summary>
+            <param name="modelBuilder">Objeto com modelos que serão criados</param>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.ListarPacotes">
+            <summary>
+            Lista todos os pacotes
+            </summary>
+            <returns>Uma lista de pacotes</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um Pacote por id
+            </summary>
+            <param name="id">id buscado</param>
+            <returns>Retorna o pacote referente ao id enviado</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Cadastrar(Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Cadastra novos pacotes
+            </summary>
+            <param name="Novopacote">Os dados do novo usuario</param>
+            <returns>como este pacote ficou</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.Atualizar(System.Int32,Senai.Senatur.WebApi.Domains.Pacotes)">
+            <summary>
+            Atualiza um pacote
+            </summary>
+            <param name="id">id do pacote a ser atualizado</param>
+            <param name="pacoteatualizado">dados a serem atualizado</param>
+            <returns>Ok</returns>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.UsuariosController.ListarUsuarios">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>uma lista de usuarios</returns>
+        </member>
+        <member name="T:Senai.Senatur.WebApi.Domains.TiposUsuario">
+            <summary>
+            Classe que representa a entidade Tiposusuario
+            </summary>
+        </member>
+        <member name="M:Senai.Senatur.WebApi.Interfaces.IUsuariosRepository.ListarUsuarios">
+            <summary>
+            Cria uma lista com todos os usuarios
+            </summary>
+            <returns>Lista de usuarios</returns>
+        </member>
+    </members>
+</doc>

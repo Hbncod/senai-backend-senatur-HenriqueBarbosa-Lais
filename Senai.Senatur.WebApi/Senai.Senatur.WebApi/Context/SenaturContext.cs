@@ -24,7 +24,8 @@ namespace Senai.Senatur.WebApi.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DEV102\\SQLEXPRESS; Database=SenaTur_CodeFirst; user Id=sa; pwd=sa@132;"); // Mude seu "Server" para conseguir compilar em seu computador obs: Lembre-se de alterar de uma \ para duas 
+            // Mude seu "Server" para conseguir compilar em seu computador obs: Lembre-se de alterar de uma \ para duas 
+            optionsBuilder.UseSqlServer("Server=DEV102\\SQLEXPRESS; Database=SenaTur_CodeFirst; user Id=sa; pwd=sa@132;"); 
 
             base.OnConfiguring(optionsBuilder);
         }
