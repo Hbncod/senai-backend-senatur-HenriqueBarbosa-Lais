@@ -12354,23 +12354,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\49826159859\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\HENRIQUE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49826159859\\Desktop\\projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\HENRIQUE\\Desktop\\Projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
       "projectName": "Senai.Senatur.WebApi",
-      "projectPath": "C:\\Users\\49826159859\\Desktop\\projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
-      "packagesPath": "C:\\Users\\49826159859\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49826159859\\Desktop\\projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\HENRIQUE\\Desktop\\Projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "packagesPath": "C:\\Users\\HENRIQUE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HENRIQUE\\Desktop\\Projeto em equipe\\senai-backend-senatur-HenriqueBarbosa-Lais\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\49826159859\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HENRIQUE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12424,6 +12420,7 @@
             "version": "[2.1.14, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12442,10 +12439,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

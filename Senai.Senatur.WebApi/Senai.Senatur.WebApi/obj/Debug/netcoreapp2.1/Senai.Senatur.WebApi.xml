@@ -16,6 +16,13 @@
             </summary>
             <param name="modelBuilder">Objeto com modelos que serão criados</param>
         </member>
+        <member name="M:Senai.Senatur.WebApi.Controllers.LoginController.Login(Senai.Senatur.WebApi.ViewModel.UsuarioViewModel)">
+            <summary>
+            Faz o login
+            </summary>
+            <param name="Login">recebe os dados a serem comparados com nosso banco</param>
+            <returns>o token do usuario</returns>
+        </member>
         <member name="M:Senai.Senatur.WebApi.Controllers.PacotesController.ListarPacotes">
             <summary>
             Lista todos os pacotes

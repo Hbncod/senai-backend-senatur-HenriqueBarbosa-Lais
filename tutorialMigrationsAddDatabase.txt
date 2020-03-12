@@ -1,7 +1,0 @@
-
-Criar a migration
-Add-Migration Nome-Migration 		// Cria-Banco
-
-
-Atualizar o banco de dados
-Update-Database				// Atualiza o banco de dados
